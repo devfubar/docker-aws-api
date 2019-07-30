@@ -1,5 +1,6 @@
 FROM node:8.10-alpine
 
+RUN npm install npm@latest -g
 # Install aws cli
 RUN wget "s3.amazonaws.com/aws-cli/awscli-bundle.zip" -O "awscli-bundle.zip" && \
     unzip awscli-bundle.zip && \
